@@ -1,0 +1,7 @@
+#tamagotchi{
+    background-color: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100000;
+}

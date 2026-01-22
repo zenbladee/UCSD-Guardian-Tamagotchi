@@ -7,17 +7,21 @@
  * Version: 1.0.0
  */
 
+// Add the iframe 
 function tamagotchi_iframe() {
     ?>
-    <div id="tamagotchi-container">
+    <div id="tamagotchi">
         <iframe
             src ="insert iframe link"
-            width = "100"
-            height = "100"
-            frameborder = "0"
-            scrolling = "no"
+            width = "500"
+            height = "500"
+            style = "border: none";
+            scrolling = "no";
         ></iframe>
     </div>
     <?php
 }
+
+//Wordpress function allowing it to appear on page
+add_action('wp-footer', 'tamagotchi_iframe');
 
