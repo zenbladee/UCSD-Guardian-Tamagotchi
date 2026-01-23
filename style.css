@@ -1,7 +1,15 @@
 #tamagotchi{
-    background-color: none;
+    background-color: transparent;
     position: fixed;
     bottom: 10px;
     left: 10px;
     z-index: 100000;
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+    #tamagotchi{
+        transform: scale(0.5);
+        transform-origin: bottom left;
+    }
 }
