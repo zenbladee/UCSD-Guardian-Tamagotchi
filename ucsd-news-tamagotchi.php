@@ -14,6 +14,11 @@ if(!defined('ABSPATH')) {
 
 // Add the iframe 
 function tamagotchi_iframe() {
+
+    //<TEST-PAGE>
+    if(!is_page('proposed-distribution-locations')){
+        return;
+    }
     ?>
     <div id="tamagotchi">
         <iframe
